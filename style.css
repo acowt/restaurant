@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(shake-fries.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x:hidden;
+    position: relative;
+}
+.nav-bar {
+    display: inline-block;
+    padding: 10px 10px;
+}
+nav-logo img {
+    width:10px;
+     height: 5px;
+}
+
+.nav-links {
+    flex: 1;
+}
+    .nav-links ul {
+        margin-left: 100px;
+        display: inline;
+ 
+    }
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 25px 25px;
+        }
+        .nav-links ul a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 13px;
+
+        }
+        .nav-links ul li::after {
+            content: ' ';
+            width: 0;
+            height: 2px;
+            background: yellow;
+            display: block;
+            margin: auto;
+        }
+        .nav-links ul li:hover::after {
+            width: 100%;
+        }
+
+.banner-title{
+    margin: 400px 130px;
+    color: yellow;
+}
+
+    .banner-title h1 {
+        font-size: 100px;
+        margin-bottom: 30px;
+    }
+
+
+
+.about {
+    color: white;
+     margin-bottom: 100px;
+     text-align:center;
+}
+    .about img {
+        image-orientation: auto;
+        margin-bottom:30px;
+    }
+    .about h1 {
+        text-align: left;
+        margin-left:200px;
+        margin-bottom: 10px;
+    }
+    .about p {
+        margin:0;
+        padding:0;
+         margin-bottom: 300px;
+    }
+
+.food {
+    color: white;
+     margin-bottom: 100px;
+     text-align:center;
+}
+    .food h1 {
+        margin:100px auto;
+        margin-bottom: 35px;
+        text-align:center;
+        font-size:80px;
+        max-width:780px;
+        position:relative;
+        color: yellow;
+    }
+        .food h1:before {
+            content:"";
+         
+            width:200px;
+            height:5px;
+            position:absolute;
+            background:white;
+            left:0px;
+            top:50%;
+            z-index:0;
+           
+
+        }
+           .food h1::after {
+            content:"";
+            
+            width:200px;
+            height:5px;
+            position:absolute;
+            background:white;
+            right:0px;
+            top:50%;
+            z-index: 0;
+
+        }
+
+    .food p {
+         margin:0;
+        padding:0;
+         margin-bottom: 30px;
+    }
+    .food img {
+        width:900px;
+        max-width:none;
+        height:300px;
+    }
+
+    
+.burger {
+    color: white;
+    text-align:left;
+    margin-left:400px;
+    display:block;
+    
+}
+
+.chicken {
+    color: white;
+     margin-bottom: 100px;
+     text-align:center;
+}
+    .chicken h1 {
+        margin:100px auto;
+        margin-bottom: 35px;
+        text-align:center;
+        font-size:80px;
+        max-width:1010px;
+        position:relative;
+        color: yellow;
+    }
+
+    .chicken h1:before {
+         content:"";
+            width:200px;
+            height:5px;
+            position:absolute;
+            background:white;
+            left:0px;
+            top:50%;
+            z-index:0;
+    }
+    .chicken h1::after {
+            content:"";
+            
+            width:200px;
+            height:5px;
+            position:absolute;
+            background:white;
+            right:0px;
+            top:50%;
+            z-index: 0;
+
+        }
+   
+    .chicken p {
+        margin-bottom:20px;
+    }
+
+
+
+
+
+.container{
+     position:relative;
+     width:350px;
+     height:300px;
+     display:inline-block;
+     padding:10px;
+    
+    
+ 
+}
+    .container h1 {
+        text-align: left;
+        margin-left:200px;
+        margin-bottom: 10px;
+    }
+
+.image {
+    display:block;
+    width:350px;
+    height:300px;
+    -ms-flex-align:center;
+
+}
+.overlay {
+    position:absolute;
+    transition:all .3s ease;
+    opacity:0;
+    background-color: #ffac00;
+}
+.container:hover .overlay {
+   opacity:1;
+}
+.overlayLeft {
+    height:100%;
+    width:0;
+    top:0;
+    left:0;
+    background-color:#ffac00;
+  
+
+}
+
+.container:hover .overlayLeft{
+    width:100%;
+
+}
+
+.text {
+    color:black;
+    font-family: Eras Medium ITC;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:30px;
+    font-weight:bold;
+}
+
+
+
+
+.responsive {
+    width:100%;
+    max-width:400px;
+    height: auto;
+}
+
+.button {
+    width:190px;
+    margin:83px;
+    transition:.1s;
+    cursor: pointer;
+    margin-top:inherit;
+
+
+}
+    .button:hover {
+        transform: scale(1.2);
+    }
+    .button:active {
+        transform: scale(0.5);
+    }
+
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  color:white;
+}
